@@ -1,0 +1,132 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #FF8A5B;
+  padding: 20px;
+}
+
+h1 {
+  font-family: "Chewy", system-ui;
+  font-size: 4rem;
+  color: #EA526F;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2rem;
+  border-radius: 8px;
+  padding: 8px 16px;
+  display: inline-block;
+}
+
+button {
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+button:hover:not(:disabled) {
+  transform: scale(1.08);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.game-container {
+  background: #FCEADE;
+  border-radius: 30px;
+  padding: 25px;
+}
+
+.game-container svg {
+  margin: 20px auto;
+  display: block;
+}
+
+.errors {
+  color: #ffffff;
+  background: #FF8A5B;
+  display: block;
+  margin: 20px auto;
+  padding: 8px 16px;
+  border-radius: 25px;
+  text-align: center;
+  width: fit-content;
+}
+
+.word-display {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.letter {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #EA526F;
+  background: #ffdae1;
+  border-radius: 12px;
+  padding: 4px 8px;
+  min-width: 30px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(143, 19, 42, 0.2);
+}
+
+.game-container h2 {
+  display: block;
+  text-align: center;
+  width: fit-content;
+  margin: 25px auto;
+}
+
+.msg-lost {
+  background: #b5284b;
+  color: #ffffff;
+}
+
+.msg-won {
+  background: #cef9e6;
+  color: #579e77;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 25px auto;
+}
+
+.keyboard button {
+  width: 50px;
+  height: 50px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 50%;
+  background: #fdbdc8;
+  color: #EA526F;
+}
+
+.keyboard button:hover:not(:disabled) {
+  background: #EA526F;
+  color: #ffffff;
+}
+
+.btn-new-game {
+  background: #EA526F;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  transition: all ease-in-out 0.2s;
+  display: block;
+  margin: 20px auto 0;
+}
+
+.btn-new-game:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(255, 112, 152, 0.35);
+}

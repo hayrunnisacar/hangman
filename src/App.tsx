@@ -22,8 +22,7 @@ export default function App() {
 
   // API Connection
   const fetchWord = async () => {
-    // const url = "http://localhost:3333";
-    const url = "https://hangman.alexischarp.fr/";
+    const url = "http://localhost:3333";
     try {
       const response = await fetch(url, {
         // Properties of the api

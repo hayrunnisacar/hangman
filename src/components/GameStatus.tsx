@@ -4,6 +4,7 @@ type GameStatusProps = {
   wordToGuess: string;
 };
 
+// Destructuration
 export const GameStatus = ({ won, lost, wordToGuess }: GameStatusProps) => {
   return (
     <>

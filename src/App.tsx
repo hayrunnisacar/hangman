@@ -1,16 +1,15 @@
 import { useState, useEffect } from 'react';
 import './styles/App.css';
-import { HangmanDrawn } from './components/hangman-drawn';
-import { WordDisplay } from './components/word-display';
+import { HangmanDrawn } from './components/HangmanDrawn';
+import { WordDisplay } from './components/WordDisplay';
+import { GameStatus } from './components/GameStatus';
+import { HintButton } from './components/HintButton';
 import { Keyboard } from './components/keyboard';
-import { GameStatus } from './components/game-status';
-import { HintButton } from './components/hint-button';
 
 export default function App() {
   const [wordToGuess, setWordToGuess] = useState("");
   const [usedLetters, setUsedLetters] = useState<string[]>([]);
 
-  // Error counter
   const errors = usedLetters.filter((letter) => 
     !wordToGuess.includes(letter)
   ).length;

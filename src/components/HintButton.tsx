@@ -15,11 +15,7 @@ export const HintButton = ({ wordToGuess, usedLetters, clickedLetter, disabled }
   };
 
   return (
-    <button
-      className="btn-hint"
-      onClick={getHint}
-      disabled={disabled}
-    >
+    <button className="btn-hint" onClick={getHint} disabled={disabled}>
       Besoin d'un indice ?
     </button>
   );

@@ -115,6 +115,16 @@ button:disabled {
   color: #ffffff;
 }
 
+.btn-hint{
+  background: #EA526F;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: block;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
 .btn-new-game {
   background: #EA526F;
   color: #ffffff;

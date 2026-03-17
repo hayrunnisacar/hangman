@@ -4,7 +4,7 @@ import { HangmanDrawn } from './components/HangmanDrawn';
 import { WordDisplay } from './components/WordDisplay';
 import { GameStatus } from './components/GameStatus';
 import { HintButton } from './components/HintButton';
-import { Keyboard } from './components/keyboard';
+import { Keyboard } from './components/Keyboard';
 
 export default function App() {
   const [wordToGuess, setWordToGuess] = useState("");
